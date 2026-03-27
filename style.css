@@ -5,6 +5,11 @@ html, body {
     width: 100%;
 }
 
+#dashboard-header {
+    /* allows for equal spacing in gap rows */
+    margin-bottom: 0;
+}
+
 .content {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -22,18 +27,33 @@ html, body {
 
 .dashboard {
     background-color: rgb(75, 75, 237);
-    grid-column: 1;
+    color: white;
+    padding-left: 10%;
     grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 50px;
+}
+
+.dashboard > div {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.site-nav, .settings-nav {
+    display: grid;
+    gap: 22px;
+    margin-bottom: auto;
 }
 
 .main-projects {
-    display: grid;
+    /* display: grid; */
 }
 
 .announcements {
-    display: grid;
+    /* display: grid; */
 }
 
 .trending {
-    display: grid;
+    /* display: grid; */
 }
