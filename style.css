@@ -104,7 +104,7 @@ button {
     gap: 35px;
 }
 
-.main-projects, .announcements {
+.main-projects, .announcements, .trending {
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 15px;
@@ -130,6 +130,13 @@ button {
     border-radius: 5px;
 }
 
-.trending {
-    /* display: grid; */
+.trending-cards {
+    display: grid;
+    grid-template-rows: repeat(4, 75px);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.announcement-cards, .trending-cards {
+    box-shadow: 3px 3px 3px rgb(180, 180, 180);;
 }
