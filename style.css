@@ -101,9 +101,10 @@ button {
 .main-side-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 35px;
 }
 
-.main-projects {
+.main-projects, .announcements {
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 15px;
@@ -114,16 +115,19 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 35px;
-    /* margin-right: 10px; */
 }
 
 .your-project-cards > * {
     background-color: white;
+    border-radius: 5px;
     box-shadow: inset 8px 0px rgb(216, 184, 0), 3px 3px 3px rgb(180, 180, 180);
 }
 
-.announcements {
-    /* display: grid; */
+.announcement-cards {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    background-color: white;
+    border-radius: 5px;
 }
 
 .trending {
