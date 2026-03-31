@@ -20,6 +20,12 @@ button {
     font-weight: bold;
 }
 
+svg {
+    fill: white;
+    width: 1.3em;
+    height: 1.3em;
+}
+
 #dashboard-header {
     /* allows for equal spacing in gap rows */
     margin-bottom: 0;
@@ -82,6 +88,10 @@ button {
 .dashboard > div {
     font-size: 1.3em;
     font-weight: bold;
+}
+
+.messages-img {
+    transform: scaleX(-1);
 }
 
 .site-nav, .settings-nav {
