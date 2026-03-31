@@ -21,9 +21,10 @@ button {
 }
 
 svg {
-    fill: white;
+    fill: currentColor;
     width: 1.4em;
     height: 1.4em;
+    vertical-align: text-bottom;
     padding-right: 30px;
 }
 
@@ -84,6 +85,10 @@ svg {
     display: grid;
     grid-template-rows: auto auto 1fr;
     gap: 50px;
+}
+
+.dashboard-img {
+    padding-right: 16px;
 }
 
 .dashboard > div {
