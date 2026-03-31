@@ -22,8 +22,9 @@ button {
 
 svg {
     fill: white;
-    width: 1.3em;
-    height: 1.3em;
+    width: 1.4em;
+    height: 1.4em;
+    padding-right: 30px;
 }
 
 #dashboard-header {
@@ -66,7 +67,7 @@ svg {
 }
 
 .welcome-msg {
-    font-size: small;
+    font-size: small; 
 }
 
 .header-btns {
@@ -86,12 +87,15 @@ svg {
 }
 
 .dashboard > div {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: bold;
 }
 
 .messages-img {
+    /* Flips image around */
     transform: scaleX(-1);
+    padding-right: 0px;
+    padding-left: 30px;
 }
 
 .site-nav, .settings-nav {
