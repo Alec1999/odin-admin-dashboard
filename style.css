@@ -20,13 +20,6 @@ button {
     font-weight: bold;
 }
 
-svg {
-    fill: currentColor;
-    width: 1.4em;
-    height: 1.4em;
-    vertical-align: text-bottom;
-    padding-right: 30px;
-}
 
 #dashboard-header {
     /* allows for equal spacing in gap rows */
@@ -48,17 +41,56 @@ svg {
     font-weight: bold;
 }
 
-.header > div, .user-content {
-    padding: 45px 40px 60px 25px;
+.header svg {
+    fill: currentColor;
+    width: 1.6em;
+    height: 1.6em;
+    vertical-align: text-bottom;
+    padding-right: 30px;
+}
+
+.header > div {
+    padding: 0px 60px;
 }
 
 .header-first-row {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    align-items: center;
 }
 
-.header-first-row > div {
+.header-search-bar {
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
+}
+
+.header-search-bar > svg {
+    min-height: 100%;
+}
+
+.header-search-bar > input {
+    min-height: 35px;
+    border-radius: 15px;
+}
+
+.profile-pic {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-pic > svg {
+    width: 100%;
+    height: 100%;
+}
+
+.full-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-self: end;
+    align-items: center;
 }
 
 .header-second-row {
@@ -96,11 +128,19 @@ svg {
     font-weight: bold;
 }
 
+.dashboard svg {
+    fill: currentColor;
+    width: 1.4em;
+    height: 1.4em;
+    vertical-align: text-bottom;
+    padding-right: 30px;
+}
+
 .messages-img {
     /* Flips image around */
-    transform: scaleX(-1);
-    padding-right: 0px;
-    padding-left: 30px;
+    /* transform: scaleX(-1); */
+    /* padding-right: 0px; */
+    /* padding-left: 30px; */
 }
 
 .site-nav, .settings-nav {
@@ -114,6 +154,7 @@ svg {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 25px;
+    padding: 45px 40px 60px 25px;
 }
 
 .main-side-content {
