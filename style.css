@@ -5,14 +5,8 @@ html, body {
     width: 100%;
 }
 
-input {
-    background-color: rgb(221, 227, 232);
-    border: 0;
-    border-radius: 5px;
-}
-
 button {
-    background-color: rgb(65, 159, 231);
+    background-color: rgb(59, 146, 213);
     color: white;
     width: 85px;
     height: 35px;
@@ -21,8 +15,8 @@ button {
     font-weight: bold;
 }
 
+/* allows for equal spacing in gap rows */
 #dashboard-header {
-    /* allows for equal spacing in gap rows */
     margin-bottom: 0;
 }
 
@@ -30,9 +24,13 @@ button {
     padding-right: 14px;
 }
 
+#notif-bell {
+    padding: 0px;
+}
+
 .content {
     display: grid;
-    grid-template-columns: 285px 4fr;
+    grid-template-columns: 261px 4fr;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
 }
@@ -54,7 +52,7 @@ button {
 }
 
 .header > div {
-    padding: 0px 60px;
+    padding: 13px 33px 0px;
 }
 
 .header-first-row {
@@ -74,15 +72,16 @@ button {
 }
 
 .header-search-bar > input {
-    /* min-width: 100px; */
     width: 425px;
     height: 25px;
+    background-color: rgb(221, 227, 232);
+    border: 0;
     border-radius: 15px;
 }
 
 .profile-pic {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -94,14 +93,17 @@ button {
 
 .full-name {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr max-content;
     justify-self: end;
+    /* justify-items: center; */
     align-items: center;
+    padding-right: 22px;
+    gap: 24px;
 }
 
 .header-second-row {
     display: grid;
-    grid-template-columns: 2fr 350px;
+    grid-template-columns: 2fr 340px;
     font-size: large;
     align-items: center;
 }
@@ -117,7 +119,7 @@ button {
 }
 
 .dashboard {
-    background-color: rgb(65, 159, 231);
+    background-color: rgb(59, 146, 213);
     color: white;
     padding-left: 10%;
     grid-row: 1 / -1;
