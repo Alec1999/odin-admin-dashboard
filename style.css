@@ -24,6 +24,11 @@ button {
     padding-right: 14px;
 }
 
+#main-profile-pic {
+    height: 65px;
+    width: 65px;
+}
+
 #notif-bell {
     padding: 0px;
 }
@@ -51,20 +56,19 @@ button {
     padding-right: 10px;
 }
 
-.header > div {
-    padding: 13px 33px 0px;
-}
-
 .header-first-row {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
 }
 
+.header-first-row {
+    padding: 13px 33px 0px;
+}
+
 .header-search-bar {
     display: grid;
     grid-template-columns: min-content auto;
-    align-items: center;
 }
 
 .header-search-bar > svg {
@@ -72,7 +76,7 @@ button {
 }
 
 .header-search-bar > input {
-    width: 425px;
+    width: 500px;
     height: 25px;
     background-color: rgb(221, 227, 232);
     border: 0;
@@ -95,21 +99,31 @@ button {
     display: grid;
     grid-template-columns: auto 1fr max-content;
     justify-self: end;
-    /* justify-items: center; */
     align-items: center;
     padding-right: 22px;
     gap: 24px;
 }
 
 .header-second-row {
+    height: 100%;
     display: grid;
     grid-template-columns: 2fr 340px;
     font-size: large;
     align-items: center;
+    padding: 0px 33px;
+}
+
+.welcome-msg-container {
+    height: 100%;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 20px;
+    align-items: center;
 }
 
 .welcome-msg {
-    font-size: small; 
+    font-size: 15px;
 }
 
 .header-btns {
@@ -158,8 +172,8 @@ button {
     background-color: rgb(221, 227, 232);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 25px;
-    padding: 45px 40px 60px 25px;
+    gap: 20px;
+    padding: 25px 30px 60px 20px;
 }
 
 .main-side-content {
@@ -178,7 +192,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 25px;
+    gap: 20px;
 }
 
 .your-project-cards > * {
