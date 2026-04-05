@@ -204,6 +204,12 @@ button {
 .project-card {
     display: grid;
     grid-template-rows: auto min-content;
+    padding: 30px 0px 0px 25px;
+}
+
+.project-card p {
+    color: rgb(99, 99, 99);
+    margin-top: 5px;
 }
 
 .project-card-icons {
