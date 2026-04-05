@@ -201,19 +201,22 @@ button {
     box-shadow: inset 8px 0px rgb(216, 184, 0), 3px 3px 3px rgb(180, 180, 180);
 }
 
-.your-project-cards svg {
-    width: 40px;
-    height: 40px;
-}
-
 .project-card {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto min-content;
 }
 
 .project-card-icons {
-    height: 15px;
-    width: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    gap: 20px;
+    padding: 0px 20px 25px 0px;
+}
+
+.project-card-icons svg {
+    width: 30px;
+    height: 30px;
 }
 
 .announcement-cards {
