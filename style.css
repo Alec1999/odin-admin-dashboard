@@ -207,9 +207,9 @@ button {
     padding: 30px 0px 0px 25px;
 }
 
-.project-card p {
+.project-card p, .announcement-cards p {
     color: rgb(99, 99, 99);
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 .project-card-icons {
@@ -230,6 +230,7 @@ button {
     grid-template-rows: repeat(3, 100px);
     background-color: white;
     border-radius: 5px;
+    padding: 35px;
 }
 
 .trending-cards {
