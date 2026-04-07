@@ -227,10 +227,20 @@ button {
 
 .announcement-cards {
     display: grid;
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(3, auto);
     background-color: white;
     border-radius: 5px;
     padding: 35px;
+    align-items: stretch;
+}
+
+.announcement-cards > div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.seperate-underline {
+    box-shadow: 0 1px 0 0 rgb(163, 163, 163);
 }
 
 .trending-cards {
@@ -241,5 +251,5 @@ button {
 }
 
 .announcement-cards, .trending-cards {
-    box-shadow: 3px 3px 3px rgb(180, 180, 180);;
+    box-shadow: 3px 3px 3px rgb(180, 180, 180);
 }
