@@ -30,6 +30,13 @@ button {
     width: 65px;
 }
 
+#messages-img {
+    /* Flips image around */
+    transform: scaleX(-1);
+    padding-right: 0px;
+    padding-left: 25px;
+}
+
 #notif-bell {
     padding: 0px;
 }
@@ -159,13 +166,6 @@ button {
     height: 1.4em;
     vertical-align: text-bottom;
     padding-right: 25px;
-}
-
-.messages-img {
-    /* Flips image around */
-    /* transform: scaleX(-1); */
-    /* padding-right: 0px; */
-    /* padding-left: 30px; */
 }
 
 .site-nav, .settings-nav {
