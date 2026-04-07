@@ -99,7 +99,7 @@ button {
 .profile-pic {
     height: 40px;
     width: 40px;
-    border-radius: 50%; 
+    border-radius: 50%;
     overflow: hidden;
 }
 
@@ -137,6 +137,7 @@ button {
 
 .welcome-msg {
     font-size: 15px;
+    padding-bottom: 7px;
 }
 
 .header-btns {
